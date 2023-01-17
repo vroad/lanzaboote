@@ -30,6 +30,7 @@ use crate::{
 fn print_logo(output: &mut Output) -> Result<()> {
     output.clear()?;
 
+    output.output_string(cstr16!("test"));
     output.output_string(cstr16!(
         "
   _                      _                 _\r
